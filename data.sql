@@ -1,0 +1,16 @@
+﻿CREATE DATABASE PolyOE
+GO
+
+Use PolyOE
+GO
+CREATE TABLE Users(
+	Id NVARCHAR(20) NOT NULL,
+	Password NVARCHAR(50) NOT NULL,
+	Fullname NVARCHAR(50) NOT NULL,
+	Email NVARCHAR(50) NOT NULL,
+	Admin BIT NOT NULL,
+	PRIMARY KEY (Id)
+	)
+
+INSERT INTO Users (id,Password,Fullname,Email,Admin)
+VALUES ('USR0001','123456',N'Bảo Ly','bly@gmail.com',1)
